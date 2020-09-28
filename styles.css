@@ -1,0 +1,51 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bar {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
+  height: 3vh;
+  margin: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar .container {
+  background-color: darkblue;
+  height: 2rem;
+  width: 2rem;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-clip-path: circle(50% at 50%);
+          clip-path: circle(50% at 50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button {
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-left: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */
