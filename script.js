@@ -40,7 +40,7 @@ $('.back').on('click', () => {
     }
     else if(stage == 4)
     {
-        let value = ((stage - 1) / 4) * 100;
+        let value = ((stage) / 4) * 100;
         $('.bar').css('background-image', `linear-gradient(to right, lightblue ${value}%, lightyellow ${value}%)`);
     }
     if(stage == 1)
