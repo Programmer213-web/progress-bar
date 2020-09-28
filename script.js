@@ -11,6 +11,7 @@ $('.next').on('click', () => {
         {
             let idin = '#stage' + stage;
             $(idin).css('transform', 'scale(2.5)');
+            $(idin).css('box-shadow', '0 3px 3px grey');
             $(idin).css('background-color', 'lightgreen');
         }
     }
@@ -20,6 +21,7 @@ $('.next').on('click', () => {
             {
                 let id = '#stage' + iterator;
                 $(id).css('transform', 'scale(1.8)');
+                $(id).css('box-shadow', 'none');
                 $(id).css('background-color', 'darkblue');
             }
     }
@@ -45,6 +47,7 @@ $('.back').on('click', () => {
         let id = '#stage' + stage;
         let value = ((stage - 1) / 4) * 100;
         $(id).css('transform', 'scale(1.8)');
+        $(id).css('box-shadow', 'none');
         $(id).css('background-color', 'darkblue');
         $('.bar').css('background-image', `linear-gradient(to right, lightblue ${value}%, lightyellow ${value}%`)
     }
