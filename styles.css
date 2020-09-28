@@ -65,5 +65,6 @@ button {
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  pointer-events: none;
 }
 /*# sourceMappingURL=styles.css.map */
