@@ -52,4 +52,18 @@ button {
   background-color: lightblue;
   cursor: pointer;
 }
+
+.message {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  margin-top: 1rem;
+  font-family: cursive;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
 /*# sourceMappingURL=styles.css.map */

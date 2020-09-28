@@ -1,6 +1,8 @@
 var stage = 1;
 var percent;
 $('.next').on('click', () => {
+    $('.message').css("opacity", "0");
+    $('.message').css('transform', 'none');
     if(stage != 0)
     {
         var percent = (stage / 4) * 100;
@@ -9,6 +11,7 @@ $('.next').on('click', () => {
         {
             let idin = '#stage' + stage;
             $(idin).css('transform', 'scale(2.5)');
+            $(idin).css('background-color', 'lightgreen');
         }
     }
     else{
@@ -17,16 +20,22 @@ $('.next').on('click', () => {
             {
                 let id = '#stage' + iterator;
                 $(id).css('transform', 'scale(1.8)');
+                $(id).css('background-color', 'darkblue');
             }
     }
     if(stage == 4)
     {
+        $('.bar').css('background-image', 'linear-gradient(to right, yellow, green)');
+        $('.message').css('opacity', '1');
+        $('.message').css('transform', 'scale(2)');
         stage = -1;
     }
     stage++;
 });
 
 $('.back').on('click', () => {
+    $('.message').css("opacity", "0");
+    $('.message').css('transform', 'none');
     if(stage != 0)
         stage--;
     else if(stage == 0)
@@ -36,6 +45,7 @@ $('.back').on('click', () => {
         let id = '#stage' + stage;
         let value = ((stage - 1) / 4) * 100;
         $(id).css('transform', 'scale(1.8)');
+        $(id).css('background-color', 'darkblue');
         $('.bar').css('background-image', `linear-gradient(to right, lightblue ${value}%, lightyellow ${value}%`)
     }
     else if(stage == 4)
